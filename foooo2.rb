@@ -8,7 +8,7 @@ n = 0
 
 while ! s.eos?
   case
-    when (s.scan /^(fo*)\n/)
+    when (s.scan /^(fo+)\n/)
       n += 1
     else
       raise

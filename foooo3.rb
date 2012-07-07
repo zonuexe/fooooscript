@@ -3,7 +3,7 @@ require 'strscan'
 
 module FooooScript
   OUTPUT_STRING = 'foooo'
-  RE_VALID_LINE = /^(fo*)\n/
+  RE_VALID_LINE = /^(fo+)\n/
   class Scanner < StringScanner; end
   class Interpreter
     def self.open(path)
